@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>PlayStation</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="images/pslogo.jpg" alt="logo" class="logo">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="">Game Controllers</a></li>
+                    <li><a href="">VR Accessories</a></li>
+                    <li><a href="">Media Remotes</a></li>
+                    <li><a href="">Others</a></li>
+                </ul>
+            </nav>
+            <img src="images/menu.png" alt="Menu-icon" class="menu-icon" onclick="togglemenu()">
+        </div>
+
+        <div class="row">
+            <div class="col-1">
+                <h2>PlayStation 5
+                    <BR>with Astros Playroom.</h2>
+                <h3>Wireless Controller -1, Games - 1(Pre-installed Game. Console May Need to be Updated to the Latest System Software Version. Internet Connection Required.)</h3>
+                <p>(Compatible/Generic)</p>
+                <h4>$499.99</h4>
+                <button type="button">Buy Now<img src="images/arrow.png">
+                    </button>
+            </div>
+            <div class="col-2">
+                <img src="images/PS5-jeje.jpg" alt="controller" class="controller">
+                <div class="color-box"></div>
+                <div class="add-btn">
+                    <img src="images/add.png">
+                    <p><small>Add to Cart</small></p>
+                </div>
+            </div>
+        </div>
+        <div class="social-links">
+            <img src="https://img.icons8.com/cute-clipart/512/000000/facebook.png" />
+            <img src="https://img.icons8.com/cute-clipart/512/000000/instagram-new.png" />
+            <img src="https://img.icons8.com/cute-clipart/512/000000/twitter.png" />
+        </div>
+        <img src="https://img.icons8.com/pastel-glyph/64/000000/code--v1.png" height="30px" style="margin-left: 50%; text-align:center" /> by PK.
+    </div>
+
+    <script>
+        var menuList = document.getElementById("menuList");
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu() {
+            if (menuList.style.maxHeight == "0px") {
+                menuList.style.maxHeight = "150px";
+            } else {
+                menuList.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+
+</html>
